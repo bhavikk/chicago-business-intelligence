@@ -24,3 +24,6 @@ images:
 - gcr.io/chicago-business-intelligence/go-microservice
 - gcr.io/chicago-business-intelligence/pgadmin
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
