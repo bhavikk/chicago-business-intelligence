@@ -216,10 +216,9 @@ func main() {
 	for {
 		// build and fine-tune functions to pull data from different data sources
 		// This is a code snippet to show you how to pull data from different data sources//.
-		GetTaxiTrips(db)
 		GetUnemploymentRates(db)
 		GetBuildingPermits(db)
-
+		GetTaxiTrips(db)
 		// Pull the data once a day
 		// You might need to pull Taxi Trips and COVID data on daily basis
 		// but not the unemployment dataset becasue its dataset doesn't change every day
@@ -254,7 +253,7 @@ func GetTaxiTrips(db *sql.DB) {
 	// Get your geocoder.ApiKey from here :
 	// https://developers.google.com/maps/documentation/geocoding/get-api-key?authuser=2
 
-	geocoder.ApiKey = "ADD-YOUR-API-KEY-HERE"
+	geocoder.ApiKey = "AIzaSyCbLGZg57ogJtEZCyK5_Uz2y_0MmKWwbYc"
 
 	
 
