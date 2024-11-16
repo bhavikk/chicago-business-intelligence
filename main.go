@@ -191,6 +191,7 @@ func main() {
 
 	db, err := sql.Open("postgres", db_connection)
 	if err != nil {
+		log.Fatalf("Failed to open database connection: %v", err)
 		panic(err)
 	}
 	
@@ -205,6 +206,7 @@ func main() {
 	// Test the database connection
 	err = db.Ping()
 	if err != nil {
+		log.Fatalf("Failed to connect to database: %v", err)
 		fmt.Println("Couldn't Connect to database")
 		panic(err)
 	}
