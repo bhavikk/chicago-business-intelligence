@@ -218,7 +218,7 @@ func main() {
 		// This is a code snippet to show you how to pull data from different data sources//.
 		GetUnemploymentRates(db)
 		GetBuildingPermits(db)
-		GetTaxiTrips(db)
+		// GetTaxiTrips(db)
 		// Pull the data once a day
 		// You might need to pull Taxi Trips and COVID data on daily basis
 		// but not the unemployment dataset becasue its dataset doesn't change every day
