@@ -198,7 +198,9 @@ func main() {
 	if port == "" {
         port = "8080"
 	}
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
+	go func() {
+		log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
+	}()
 
 	// Test the database connection
 	//err = db.Ping()
